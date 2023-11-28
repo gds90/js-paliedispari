@@ -23,7 +23,7 @@ let oddOrEven_choice = prompt('Scegli pari o dispari:');
 let number_choice = parseInt(prompt('Scegli un numero da 1 a 5 compresi'));
 
 // 5) Controllo che l'utente inserisca un numero da 1 a 5
-while (!(number_choice > 0 && number_choice < 6)){ 
+while (isNaN(number_choice) || number_choice < 1 || number_choice > 6){ 
     number_choice = prompt('Attenzione, hai inserito un valore errato. Inserisci un numero da 1 a 5 compresi');
 }
 
