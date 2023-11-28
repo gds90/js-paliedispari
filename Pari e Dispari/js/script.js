@@ -39,11 +39,14 @@ let isSumEven = oddOrEven(sum);
 
 // 9) Dichiariamo chi ha vinto
 if (isSumEven && oddOrEven_choice === "pari"){
+    // se la somma è pari e la scelta dell'utente è stata pari ha vinto
     alert("La somma dei numeri è pari, hai vinto!")
 } 
 else if (!isSumEven && oddOrEven_choice === "dispari") {
+    // se la somma è dispari e la scelta dell'utente è stata dispari ha vinto
     alert("La somma dei numeri è dispari, hai vinto!");
 }
 else {
+    // in tutti gli altri casi ha perso
     alert("Hai perso!");
 }
