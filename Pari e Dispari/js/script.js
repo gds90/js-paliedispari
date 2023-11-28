@@ -18,7 +18,7 @@ function oddOrEven(num){
 
 // 3) Chiediamo all'utente di scegliere pari o dispari
 let oddOrEven_choice = prompt('Scegli pari o dispari:');
-console.log(oddOrEven_choice)
+
 // 4) Chiediamo all'utente di inserire un numero da 1 a 5
 let number_choice = parseInt(prompt('Scegli un numero da 1 a 5 compresi'));
 
@@ -26,16 +26,16 @@ let number_choice = parseInt(prompt('Scegli un numero da 1 a 5 compresi'));
 while (!(number_choice > 0 && number_choice < 6)){ 
     number_choice = prompt('Attenzione, hai inserito un valore errato. Inserisci un numero da 1 a 5 compresi');
 }
-console.log(number_choice)
+
 // 6) Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione)
 let cpu_number = randomNumber();
-console.log(cpu_number)
+
 // 7) Procedo con la somma dei due numeri
 let sum = number_choice + cpu_number;
-console.log(sum)
+
 // 8) Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 let isSumEven = oddOrEven(sum);
-console.log(isSumEven)
+
 
 // 9) Dichiariamo chi ha vinto
 if (isSumEven && oddOrEven_choice === "pari"){
