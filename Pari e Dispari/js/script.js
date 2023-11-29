@@ -19,7 +19,7 @@ function oddOrEven(num){
 // 3) Chiediamo all'utente di scegliere pari o dispari
 let oddOrEven_choice = prompt('Scegli pari o dispari:');
 // 3.1) controllo che l'utente abbia inserito o pari o dispari 
-while (oddOrEven_choice !== "pari" && oddOrEven_choice !== "dispari"){ 
+while (oddOrEven_choice.toLowerCase() != "pari" && oddOrEven_choice.toLowerCase() != "dispari"){ 
     oddOrEven_choice = prompt('Attenzione, hai inserito un valore errato. Inserisci o pari o dispari');
 }
 
