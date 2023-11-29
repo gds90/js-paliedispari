@@ -5,10 +5,10 @@
 // 1) creo una funzione che mi permetta di sapere se la parola inserita dall'utente è palindroma o no
 function palindromeWord(word){
     
-    // converto la parola tutta in minuscolo per evitare problemi di case sensitive
+    // 1.1) converto la parola tutta in minuscolo per evitare problemi di case sensitive e la associo ad una variabile
     const reverseWord = word.toLowerCase();
     
-    // 4) controllo che la parola inserita dall'utente sia uguale alla parola invertita
+    // 1.2) controllo che la parola inserita dall'utente sia uguale alla parola invertita
     return reverseWord == reverseWord.split('').reverse().join('');
 }
 
